@@ -1,1 +1,49 @@
 /* Denna fil skall innehålla din CSS kod */
+#container {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    grid-row-gap: 10px;
+    grid-template-rows: 25% 30px 60% auto;
+    grid-template-areas: 
+    'hd' 'hd'
+    'nav'
+    'mn' 'as'
+    'ft' 'ft';
+}
+
+header {
+    background-color: #60CE7D;
+    text-align: center;
+    
+}
+
+nav {
+    background-color: #004526;
+    display: grid;
+    padding: 5px;
+}
+
+#container2 {
+    display: block;
+    margin: left;
+    height: 15px;
+    width: 50%;
+    
+    padding: 0px;
+    background-color: white;
+}
+
+
+main {
+    background-color: white;
+}
+aside {
+    background-color: lightgray;
+}
+
+footer{
+    background-color: #EFCA08;
+}
