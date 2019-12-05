@@ -6,51 +6,58 @@
     margin: 0px;
     padding: 0px;
     grid-row-gap: 10px;
+    
     grid-template-rows: 25% 30px 60% auto;
     grid-template-areas: 
-    'hd' 'hd'
-    'nav' 'as'
-    'mn' 'as'
-    'ft' 'ft';
+    'hd hd hd'
+    'nav nav as'
+    'mn mn as'
+    'ft ft ft';
 }
 
 header {
-    background-color: #60CE7D;
-    text-align: center;
-    
+    grid-area: hd;
+    background-color: #A4B859;
+    display: grid;
 }
 
 h1 {
     margin: auto;
     text-align: center;
-    vertical-align: middle;
-    font-size: 150px;
+    font-size: 100px;
 }
 
 nav {
-    background-color: #004526;
+    grid-area: nav;
+    background-color: #42631C;
     display: grid;
     padding: 5px;
+}
+
+main {
+    grid-area: mn;
+    background-color: white;
+}
+aside {
+    grid-area: as;
+    background-color: lightgray;
+}
+
+footer{
+    grid-area: ft;
+    background-color: #C68315;
 }
 
 #container2 {
     display: block;
     margin: left;
     height: 15px;
-    width: 50%;
+    width: 80%;
     
     padding: 0px;
     background-color: white;
 }
 
-
-main {
-    background-color: white;
-}
-aside {
-    background-color: lightgray;
-}
-
-footer{
-    background-color: #EFCA08;
+#button {
+    padding: 1px 1px;
 }
