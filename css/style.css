@@ -10,10 +10,10 @@
     border-radius: 25px;
     grid-template-rows: 25% 30px 60% auto;
     grid-template-areas: 
-    'hd hd hd'
-    'nav nav as'
-    'mn mn as'
-    'ft ft ft';
+    'hd hd hd hd'
+    'nav nav nav nav'
+    'mn mn mn as'
+    'ft ft ft as';
 }
 
 header {
@@ -36,6 +36,21 @@ h1 {
 
 h2 {
     font-family: sans-serif;
+    font-size: 40px;
+    margin-top: 0em;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-left: 25px;
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+
+p {
+    font-family: sans-serif;
+    margin-left: 25px;
 }
 
 nav {
@@ -48,10 +63,11 @@ nav {
 main {
     grid-area: mn;
     background-color: white;
+    padding: 25px;
 }
 aside {
     grid-area: as;
-    background-color: lightgray;
+    background-color: #A4B859;
 }
 
 footer{
@@ -91,4 +107,13 @@ button {
 #skog {
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+.djur {
+    display: grid;
+    width: 50%;
+    height: auto;
+    margin-left: 25px;
+    margin-bottom: 0em;
+    margin-right: 0em;
 }
