@@ -125,3 +125,10 @@ button {
     font-size: 25px;
     margin-left: 10px;
 }
+
+.reklam {
+    display: grid;
+    width: 45%;
+    height: auto;
+}
+
