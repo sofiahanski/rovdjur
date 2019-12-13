@@ -67,6 +67,7 @@ main {
 aside {
     grid-area: as;
     background-color: #A4B859;
+    padding: 10px;
 }
 
 footer{
@@ -128,7 +129,13 @@ button {
 
 .reklam {
     display: grid;
-    width: 45%;
-    height: auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+}
+
+.reklamtext {
+    font-size: 25px;
 }
 
